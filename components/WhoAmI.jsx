@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import '@/style/introduction.css'
 
-const WhoAmI = () => {
+const Introduction = () => {
   return (
     <div>
       <motion.div
@@ -68,4 +69,4 @@ const WhoAmI = () => {
   );
 };
 
-export default WhoAmI;
+export default Introduction;

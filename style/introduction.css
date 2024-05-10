@@ -1,0 +1,117 @@
+.layout-container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  border-right: 1px solid #ccc;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.progress-steps {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.progress-step {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.progress-step.active {
+  background-color: #007bff;
+}
+
+.edges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edge {
+  width: 2px;
+  height: 60px;
+  background-color: #ccc;
+}
+
+.edge.active {
+  background-color: #007bff;
+}
+.step-text.active {
+  color: #007bff;
+}
+.step-text {
+  margin-bottom: 60px;
+  vertical-align: middle;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.step-texts {
+  margin-left: 1.25rem;
+}
+
+.vertical-progress-bar {
+  display: flex;
+  width: 25%;
+  max-width: 16rem;
+  margin-left: 3rem;
+}
+
+.layout-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.who-am-i-title {
+  font-size: 6rem;
+}
+
+.resume-button {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 3rem;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.resume-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.resume-button:hover > svg {
+  fill: black;
+}
+
+.resume-button > svg {
+  transition: all ease-in 0.2s;
+}

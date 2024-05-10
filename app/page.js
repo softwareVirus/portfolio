@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { pageVariants } from "./pageTransitions";
 import { useEffect } from "react";
-import WhoAmI from "@/components/WhoAmI";
+import Introduction from "@/components/WhoAmI";
 import Projects from "@/components/Projects";
 import Contacts from "@/components/Contacts";
 import { usePage } from "@/context/page";
@@ -54,7 +54,7 @@ const IndexPage = () => {
   const pageContext = usePage();
   const { selectedStep, setSelectedStep } = pageContext;
   const pages = [
-    <WhoAmI key={"whoami"} />,
+    <Introduction key={"introduction"} />,
     <Projects key={"projects"} title="My Projects" projects={projects} />,
     <Contacts key={"contacts"} />,
     <Projects title="My Blogs" projects={blogs} key={"blogs"} />,

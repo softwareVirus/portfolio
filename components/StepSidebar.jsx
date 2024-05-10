@@ -1,6 +1,8 @@
 import { usePage } from "@/context/page";
 import { Fragment } from "react";
 import { motion } from "framer-motion";
+import "@/style/introduction.css";
+
 export default function StepSidebar() {
   const pageContext = usePage();
   const { selectedStep, setSelectedStep } = pageContext;
@@ -41,7 +43,8 @@ export default function StepSidebar() {
               className={`step-text ${selectedStep >= index ? "active" : ""}`}
               onClick={() => handleStepClick(index)}
               animate={{
-                scale: selectedStep == index ? 1.5 : index < selectedStep ? 1.2 : 1,
+                scale:
+                  selectedStep == index ? 1.5 : index < selectedStep ? 1.2 : 1,
                 marginLeft:
                   selectedStep == index
                     ? "1.85rem"

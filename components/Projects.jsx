@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import "@/style/projects.css";
 
 const Projects = ({ title, projects }) => {
   return (
