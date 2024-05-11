@@ -35,7 +35,7 @@ const BottomNavigation = () => {
           onClick={() => handlePageChange(index)}
           className={`${selectedStep === index ? "active" : ""}`}
           animate={{
-            scale: selectedStep == index ? 1.2 : 1,
+            scale: selectedStep == index ? 1.1 : 0.9,
           }}
           transition={{duration: 0.2}}
         >
