@@ -5,10 +5,10 @@ import '@/style/introduction.css'
 
 const Introduction = () => {
   return (
-    <div>
+    <div className="who-am-i-container">
       <motion.div
-        initial={{ y: 0 }}
-        animate={{ y: -75 }}
+        initial={{ y: 75 }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.5, delay: 2.25 }}
       >
         <motion.h1
