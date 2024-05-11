@@ -87,26 +87,6 @@
   border-radius: 0 5px 5px 0;
 }
 
-/*Facebook*/
-.btn-facebook:hover > i,
-.btn-facebook:focus > i {
-  color: #3b5998;
-}
-
-.btn-facebook > span {
-  background: #3b5998;
-}
-
-/*Twitter*/
-.btn-twitter:hover > i,
-.btn-twitter:focus > i {
-  color: #55acee;
-}
-
-.btn-twitter > span {
-  background: #55acee;
-}
-
 /*Google*/
 .btn-github:hover > i,
 .btn-github:focus > i {
@@ -118,16 +98,6 @@
   color: black;
 }
 
-/*Pinterest*/
-.btn-pinterest:hover > i,
-.btn-pinterest:focus > i {
-  color: white;
-}
-
-.btn-pinterest > span {
-  background: #cb2028;
-}
-
 /*LinkedIn*/
 .btn-linkedin:hover > i,
 .btn-linkedin:focus > i {
@@ -136,4 +106,14 @@
 
 .btn-linkedin > span {
   background: #007bb6;
+}
+
+@media (max-width: 600px) {
+  .btn {
+    width: 100%;
+  }
+
+  #social-platforms {
+    flex-direction: column;
+  }
 }

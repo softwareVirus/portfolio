@@ -115,3 +115,13 @@
 .resume-button > svg {
   transition: all ease-in 0.2s;
 }
+
+@media (max-width: 600px) {
+    .vertical-progress-bar {
+        display: none;
+    }   
+
+    .who-am-i-container {
+        margin-top: 6rem;
+    }
+}
