@@ -177,3 +177,9 @@ body {
     margin-bottom: 3rem;
   }
 }
+
+@media (min-width: 601px) {
+  .bottom-bar {
+    display: none;
+  }
+}
