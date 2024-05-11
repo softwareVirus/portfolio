@@ -7,11 +7,11 @@ import Introduction from "@/components/WhoAmI";
 import Projects from "@/components/Projects";
 import Contacts from "@/components/Contacts";
 import { usePage } from "@/context/page";
-import microBlogImage from "@/public/microblog.png";
-import lokyImage from "@/public/loky.png";
-import codewarsImage from "@/public/codewars.png";
-import gdscImage from "@/public/gdsc.png";
-import faceImage from "@/public/face.png";
+import microBlogImage from "@/public/microblog.webp";
+import lokyImage from "@/public/loky.webp";
+import codewarsImage from "@/public/codewars.webp";
+import gdscImage from "@/public/gdsc.webp";
+import faceImage from "@/public/face.webp";
 
 const projects = [
   {
@@ -68,9 +68,7 @@ const IndexPage = () => {
     }
   };
   const handleWheel = (event) => {
-    console.log(event.ctrlKey || event.shiftKey);
-    if (event.ctrlKey || event.shiftKey) return;
-    console.log(event.ctrlKey, event.shiftKey);
+    if (event.ctrlKey || event.shiftKey || event.clientX <= 600) return;
     if (event.deltaY > 0) {
       // Scroll down
       handleScroll("down");

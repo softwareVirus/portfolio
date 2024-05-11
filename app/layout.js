@@ -4,9 +4,9 @@ import "./globals.css"; // Your global styles
 import { Providers } from "./providers";
 import StepSidebar from "@/components/StepSidebar";
 import Head from "next/head";
+import BottomNavigation from "@/components/BottomNavigation";
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <Head>
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
                 {children}
               </div>
             </div>
+            <BottomNavigation />
           </div>
         </Providers>
       </body>

@@ -111,3 +111,68 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+.content-container {
+  width: 80%;
+}
+
+.who-am-i-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.bottom-bar button {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.bottom-bar .active {
+  color: #007bff;
+}
+.bottom-bar {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .content-container {
+    width: 100%;
+  }
+
+  .layout-container {
+    align-items: flex-start !important;
+    padding: 1.5rem;
+    padding-top: 4rem;
+  }
+
+  h1 {
+    font-size: 3.5rem !important;
+  }
+
+  html {
+    font-size: 12px;
+  }
+
+  .layout-container {
+    height: calc(100vh - 4rem);
+  }
+}
