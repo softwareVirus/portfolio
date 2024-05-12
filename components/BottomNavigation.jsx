@@ -28,7 +28,7 @@ const BottomNavigation = () => {
     setSelectedStep(index);
   };
   return (
-    <div class="bottom-bar">
+    <div className="bottom-bar">
       {navigationOptions.map((option, index) => (
         <motion.button
           key={option.class}
