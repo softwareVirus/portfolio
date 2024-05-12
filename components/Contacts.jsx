@@ -15,19 +15,19 @@ const Contacts = () => {
       </h1>
       <div id="social-platforms">
         <Link
-          class="btn btn-icon btn-github"
+          className="btn btn-icon btn-github"
           href="https://github.com/softwareVirus"
           target="_blank"
         >
-          <i class="fa fa-github"></i>
+          <i className="fa fa-github"></i>
           <span>Github</span>
         </Link>
         <Link
-          class="btn btn-icon btn-linkedin"
+          className="btn btn-icon btn-linkedin"
           href="https://www.linkedin.com/in/ibrahim-halil-sakli-83a5061b1/"
           target="_blank"
         >
-          <i class="fa fa-linkedin"></i>
+          <i className="fa fa-linkedin"></i>
           <span>LinkedIn</span>
         </Link>
       </div>
