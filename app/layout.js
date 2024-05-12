@@ -2,9 +2,9 @@
 import { useState } from "react";
 import "./globals.css"; // Your global styles
 import { Providers } from "./providers";
-import StepSidebar from "@/components/StepSidebar";
 import Head from "next/head";
-import BottomNavigation from "@/components/BottomNavigation";
+import ParticleBackground from "@/components/ParticalBackground";
+import MainSection from "@/components/MainSection";
 
 export default function RootLayout({ children }) {
   return (
@@ -22,17 +22,8 @@ export default function RootLayout({ children }) {
       <body>
         {/* Edges for the progress steps */}
         <Providers>
-          <div className="layout-container">
-            <StepSidebar />
-            <div className="content-container">
-              {/* Content area with dynamic margin based on sidebar state */}
-              <div className="content">
-                {/* Content */}
-                {children}
-              </div>
-            </div>
-            <BottomNavigation />
-          </div>
+          <ParticleBackground />
+          <MainSection>{children}</MainSection>
         </Providers>
       </body>
     </html>
