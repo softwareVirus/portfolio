@@ -50,33 +50,36 @@ const blogs = [
   },
 ];
 
+const pages = [
+  <Introduction key={"introduction"} />,
+  <Projects key={"projects"} title="My Projects" projects={projects} />,
+  <Contacts key={"contacts"} />,
+  <Projects title="My Blogs" projects={blogs} key={"blogs"} />,
+];
+
 const IndexPage = () => {
   const pageContext = usePage();
   const { selectedStep, setSelectedStep } = pageContext;
-  const pages = [
-    <Introduction key={"introduction"} />,
-    <Projects key={"projects"} title="My Projects" projects={projects} />,
-    <Contacts key={"contacts"} />,
-    <Projects title="My Blogs" projects={blogs} key={"blogs"} />,
-  ];
 
-  const handleScroll = (direction) => {
+  const handleStepBar = (direction) => {
     if (direction === "up") {
       setSelectedStep((prev) => (prev == pages.length - 1 ? prev : prev + 1));
     } else if (direction === "down") {
       setSelectedStep((prev) => (prev == 0 ? prev : prev - 1));
     }
   };
+  
   const handleWheel = (event) => {
     if (event.ctrlKey || event.shiftKey || event.clientX <= 600) return;
     if (event.deltaY > 0) {
       // Scroll down
-      handleScroll("down");
+      handleStepBar("down");
     } else if (event.deltaY < 0) {
       // Scroll up
-      handleScroll("up");
+      handleStepBar("up");
     }
   };
+  
   useEffect(() => {
     window.addEventListener("wheel", handleWheel);
 
